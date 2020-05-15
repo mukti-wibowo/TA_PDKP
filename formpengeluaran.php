@@ -37,14 +37,14 @@
   <tr>
   <td height="23"><?php echo $i; ?></td>
   <td><input name="pengeluaran[]" type="text" size="20" placeholder="Ket pengeluaran" required></td>
-  <td><input name="jumlah[]" type="text" size="30" required></td>
+  <td><input name="jumlah[]" type="text" size="30" placeholder="jumlah pengeluaran" required></td>
   <td><select name="satuan[]" required>
         <option value="kg">kg</option>
         <option value="buah">buah</option>
         <option value="buah">lembar</option>
         <option value="orang">orang</option>
         </select></td>
-  <td><input type="text" name="harga[]" /></td>
+  <td><input type="text" name="harga[]" placeholder="total pengeluaran"/></td>
   <td><select name="tanggal[]" required>
         <?php
             for ($j=1; $j<=31 ; $j++) {
