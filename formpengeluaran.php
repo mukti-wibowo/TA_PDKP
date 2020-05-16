@@ -37,14 +37,14 @@
   <tr>
   <td height="23"><?php echo $i; ?></td>
   <td><input name="pengeluaran[]" type="text" size="20" placeholder="Ket pengeluaran" required></td>
-  <td><input name="jumlah[]" type="text" size="30" required></td>
+  <td><input name="jumlah[]" type="text" size="30" placeholder="jumlah pengeluaran" required></td>
   <td><select name="satuan[]" required>
         <option value="kg">kg</option>
         <option value="buah">buah</option>
         <option value="buah">lembar</option>
         <option value="orang">orang</option>
         </select></td>
-  <td><input type="text" name="harga[]" /></td>
+  <td><input type="text" name="harga[]" placeholder="total pengeluaran"/></td>
   <td><select name="tanggal[]" required>
         <?php
             for ($j=1; $j<=31 ; $j++) {
@@ -88,7 +88,7 @@
     <button type="submit" name='btnOk' value=Submit required>Submit</button>
     <button type="reset">Reset</button>
     </form>
-        <form action="menuadmin.php" method="POST">
+        <form action="menu.php" method="POST">
         <button type="submit">Kembali ke menu</button></br>
         <br></br>
         <table width='800' align='center' cellpadding='2' cellspacing='2' border='2'>
